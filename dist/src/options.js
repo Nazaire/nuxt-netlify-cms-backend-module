@@ -8,6 +8,6 @@ exports.defaults = {
     path: '/admin'
 };
 function initOptions(moduleOptions) {
-    return deepmerge_1.default.all([exports.defaults, this.options.vuetify || {}, moduleOptions || {}]);
+    return deepmerge_1.default.all([exports.defaults, this.options.cms || {}, moduleOptions || {}]);
 }
 exports.default = initOptions;
