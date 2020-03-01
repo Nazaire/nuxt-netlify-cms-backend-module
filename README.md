@@ -1,7 +1,9 @@
 # nuxt-netlify-cms-backend-module
-A nuxt.js module that implements a backend server for Netlify CMS
+A nuxt.js module that implements a backend server for Netlify CMS.
 
-This module runs file storage proxy server that Netlify CMS can use as a backend. It installs [Netlify CMS Proxy Server](https://www.npmjs.com/package/netlify-cms-proxy-server) as server middleware so it can be easily installed as a nuxt module.
+This module runs a file storage proxy server that Netlify CMS can use as a backend. It installs [Netlify CMS Proxy Server](https://www.npmjs.com/package/netlify-cms-proxy-server) as server middleware so it can be easily installed as a nuxt module.
+
+**Not maintained. Use as you wish.**
 
 ### Install
 ```
@@ -43,15 +45,17 @@ backend:
  
  ## Using your content
  
+ ### Configuring Netlify CMS
+ 
+ The most common installation of netlify CMS is creating an admin folder in /static/admin that contain the index.html and config.yml. [See Netlify's guide.](https://www.netlifycms.org/docs/nuxt/)
+ 
+ Whatever paths you specify in your config.yml is where the content will be stored.
+ 
  ### Nuxtent
  I recommend installing [nuxtent](https://github.com/nuxt-community/nuxtent-module) which provides a plugin you can use to access your CMS content.
  
  These templates were a good reference: https://github.com/nuxt-community/nuxtent-module/tree/master/examples
  
- Specify your content in the nuxtent.config.js file, and use the $content plugin to fetch your content. [Example.](https://nuxtent-module.netlify.com/guide/usage/)
-
- ### Configuring Netlify CMS
- 
- The most common installation of netlify CMS is creating an admin folder in /static/admin that contain the index.html and config.yml. [See Netlify's guide.](https://www.netlifycms.org/docs/nuxt/)
+ Expose your content in the nuxtent.config.js file, and use the $content plugin to fetch your content. [Example.](https://nuxtent-module.netlify.com/guide/usage/)
  
  
