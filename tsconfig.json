@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "lib": ["dom", "esnext"],
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*",
+    "node_modules/netlify-cms-proxy-server/src/middlewares/localFs",
+    "node_modules/netlify-cms-proxy-server/src/middlewares/joi",
+    "node_modules/netlify-cms-proxy-server/src/middlewares/utils"
+  ],
+  "exclude": [
+    "**/*.spec.ts"
+  ]
+}
