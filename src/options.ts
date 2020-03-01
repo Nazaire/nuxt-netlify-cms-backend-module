@@ -10,5 +10,5 @@ export const defaults = {
 }
 
 export default function initOptions(this: ModuleThis, moduleOptions?: Options): Required<Options>  {
-  return merge.all([defaults, this.options.vuetify || {}, moduleOptions || {}]) as Required<Options>
+  return merge.all([defaults, this.options.cms || {}, moduleOptions || {}]) as Required<Options>
 }
