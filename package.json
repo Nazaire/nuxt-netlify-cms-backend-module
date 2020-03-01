@@ -1,7 +1,7 @@
 {
   "name": "nuxt-netlify-cms-backend-module",
   "version": "1.0.0",
-  "description": "",
+  "description": "A nuxt.js module that implements a backend server for Netlify CMS",
   "main": "dist/src/module.js",
   "directories": {
     "src": "src"
